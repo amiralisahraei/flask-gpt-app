@@ -1,12 +1,10 @@
 # Flask GPT App
 This project is a Flask-based application that serves as an interface to a GPT model using the Groq Cloud API. The model used is **llama3-8b-8192**. The Flask app acts as a server, processing user queries, sending them to the GPT model, and returning the generated responses. Additionally, the application maintains chat history throughout the conversation.
 
-## Results
+##
   
 <table>
-<tr>
 <td><img src="results/result.png"></td>
-</tr>
 </table>
 
 
