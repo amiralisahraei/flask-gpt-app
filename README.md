@@ -1,10 +1,23 @@
 # Flask GPT App
-This project is a Flask-based application that serves as an interface to a GPT model using the Groq Cloud API. The model used is **llama3-8b-8192**. The Flask app acts as a server, processing user queries, sending them to the GPT model, and returning the generated responses. Additionally, the application maintains chat history throughout the conversation.
+This project integrates the GPT model with a Retrieval-Augmented Generation (RAG) feature. Users can interact with the model via a web interface, manage their chat history, and utilize advanced document querying capabilities.
+
+Key features include:
+
+- **User Registration and Login**: Secure user accounts with chat history recovery.
+- **Interactive GPT Chat**: Real-time chat with the GPT model.
+- **Document Upload and Querying**: Upload PDF documents and query their contents using the RAG feature.
+- **Search Agents**: **Document Querying Agent (RAG)** used For queries related to the content of uploaded PDFs. **Tavily Search Agent** used For general information retrieval tasks, such as weather predictions.
+
+
 
 ##
   
 <table>
-<td><img src="results/result.png"></td>
+<tr>
+<td><img src="results/result1.png"></td>
+<td><img src="results/result2.png"></td> 
+<td><img src="results/result2.png"></td> 
+</tr>
 </table>
 
 
