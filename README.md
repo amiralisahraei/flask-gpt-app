@@ -3,7 +3,7 @@ This project integrates the GPT model with a Retrieval-Augmented Generation (RAG
 
 Key features include:
 
-- **User Registration and Login**: Secure user accounts with chat history recovery.
+- **User Registration and Login**: Secure user accounts with chat history recovery through MySQL database.
 - **Interactive GPT Chat**: Real-time chat with the GPT model.
 - **Document Upload and Querying**: Upload PDF documents and query their contents using the RAG feature.
 - **Search Agents**: **Document Querying Agent (RAG)** used For queries related to the content of uploaded PDFs. **Tavily Search Agent** used For general information retrieval tasks, such as weather predictions.
