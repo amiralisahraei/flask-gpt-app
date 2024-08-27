@@ -90,7 +90,7 @@ def file_upload_user(request, main_dir, upload_dir):
         else:
             raise Exception("file or directory does not exit...!")
     except Exception as e:
-        return "Something went wrong related sending file: {e}"
+        return f"Something went wrong related sending file: {e}"
 
 
 def chat_user(request, file_exist: bool):
