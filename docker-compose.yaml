@@ -1,5 +1,21 @@
-version: '3.1'
+version: '3.2'
 services:
+
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD:   # Replace with a strong password
+      MYSQL_DATABASE: test_database
+      MYSQL_USER: amir
+      MYSQL_PASSWORD: Amir12345
+    ports:
+      - 3307:3306
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - my_network
+
   my-app:
     build: . 
     container_name: gpt-container
@@ -7,6 +23,23 @@ services:
     ports:
       - 8080:8080
     environment:
-      GROQ_API_KEY: YOUR_GROQ_API_KEY
+      DATABASE_URL: "mysql+pymysql://amir:Amir12345@db/test_database"  
+      UPLOAD_DIR: "upload"
+      MAIN_DIR: "app"
+      USER_AGENT: "myagent"
+      TAVILY_API_KEY: "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"
+      GROQ_API_KEY: "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"
       FLASK_APP: app/server
       FLASK_ENV: development
+      FLASK_DEBUG: 1
+    depends_on:
+      - db
+    networks:
+      - my_network
+
+  
+volumes:
+  db_data:
+
+networks:
+  my_network:
