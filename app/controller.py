@@ -87,8 +87,6 @@ def file_upload_user(request, main_dir, upload_dir):
             file_from_html.save(f"./{main_dir}/{upload_dir}/user_info.pdf")
             flash("File uploaded successfully!")
             return redirect("/chat")
-        else:
-            raise Exception("file or directory does not exit...!")
     except Exception as e:
         return f"Something went wrong related sending file: {e}"
 
