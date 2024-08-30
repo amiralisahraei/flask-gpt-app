@@ -20,7 +20,7 @@ upload_dir = os.getenv("UPLOAD_DIR")
 main_dir = os.getenv("MAIN_DIR")
 
 llm = ChatGroq(
-    model="llama3-groq-70b-8192-tool-use-preview",
+    model="llama-3.1-70b-versatile",
     temperature=0,
     max_tokens=None,
     timeout=None,
