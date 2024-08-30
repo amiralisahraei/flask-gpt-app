@@ -38,12 +38,15 @@ Open your browser and acceess project through this URL: http://127.0.0.1:8080/
 ## Run The Project with Docker
 
 
+Install request package
 Build the Docker image:
 ```bash
-  docker build -t gpt-app-image 
+  pip install requests==2.25.1
 ```
-Run the Docker container:
+
+Run docker-compose.yaml:
 ```bash
-  docker run -p 8000:8000 gpt-app-container
+  docker-comspoe -f docker-compose.yaml up
 ```
+
 Open your browser and acceess project through this URL: http://127.0.0.1:8000/
