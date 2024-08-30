@@ -49,4 +49,4 @@ Run docker-compose.yaml:
   docker-comspoe -f docker-compose.yaml up
 ```
 
-Open your browser and acceess project through this URL: http://127.0.0.1:8000/
+Open your browser and acceess project through this URL: http://127.0.0.1:8080/
